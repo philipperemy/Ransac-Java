@@ -6,6 +6,16 @@ import java.util.List;
 import java.util.Random;
 import java.util.Set;
 
+/**
+// Random - hyper parameters introduced. So it's not very good.
+	public static LapTimeRegressionModel performRANSAC(List<Double> diffs)
+	{
+		List<Double> res = RANSAC.perform(diffs, 2, 100, 1, 0.2);
+		return new LapTimeRegressionModel(res.get(0), res.get(1));
+	}
+*/
+
+
 public class RANSAC
 {
 	private static Random random = new Random();
